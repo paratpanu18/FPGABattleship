@@ -1,0 +1,78 @@
+# 20 MHz Crystal Oscillator
+NET "OSC" LOC = P123;
+
+# VGA Adapter
+NET "HSYNC" LOC = P115;
+NET "VSYNC" LOC = P114;
+NET "VGA_RGB[0]" LOC = P118;
+NET "VGA_RGB[1]" LOC = P117;
+NET "VGA_RGB[2]" LOC = P116;
+
+# Control
+NET "SW0" LOC = P66;
+NET "PB1" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "PB1" LOC = P45;
+NET "PB2" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "PB2" LOC = P46;
+NET "PB3" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "PB3" LOC = P48;
+NET "PB5" LOC = P51;
+
+
+# Seven Segment Display
+NET "SSD_Segment[0]" LOC = P41;
+NET "SSD_Segment[1]" LOC = P40;
+NET "SSD_Segment[2]" LOC = P35;
+NET "SSD_Segment[3]" LOC = P34;
+NET "SSD_Segment[4]" LOC = P32;
+NET "SSD_Segment[5]" LOC = P29;
+NET "SSD_Segment[6]" LOC = P27;
+
+NET "SSD_Common[3]" LOC = P30;
+NET "SSD_Common[2]" LOC = P33;
+NET "SSD_Common[1]" LOC = P43;
+NET "SSD_Common[0]" LOC = P44;
+
+
+# Mode Selection
+NET "ModeSel[0]" LOC = P62;		# SW1
+NET "ModeSel[1]" LOC = P61;		# SW2
+
+## Data Transmition
+NET "OUT_AttackSig" LOC = P5;
+NET "IN_AttackSig" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "IN_AttackSig" LOC = P7;
+
+NET "OUT_AttackRow[0]" LOC = P6;
+NET "OUT_AttackRow[1]" LOC = P8;
+NET "OUT_AttackRow[2]" LOC = P10;
+NET "OUT_AttackRow[3]" LOC = P12;
+
+NET "IN_AttackRow[0]" LOC = P15;
+NET "IN_AttackRow[1]" LOC = P17;
+NET "IN_AttackRow[2]" LOC = P22;
+NET "IN_AttackRow[3]" LOC = P24;
+
+NET "OUT_AttackCol[0]" LOC = P124;
+NET "OUT_AttackCol[1]" LOC = P127;
+NET "OUT_AttackCol[2]" LOC = P132;
+NET "OUT_AttackCol[3]" LOC = P134;
+
+NET "IN_AttackCol[0]" LOC = P138;
+NET "IN_AttackCol[1]" LOC = P140;
+NET "IN_AttackCol[2]" LOC = P142;
+NET "IN_AttackCol[3]" LOC = P1;
+
+NET "OUT_ResultEnable" LOC = P9;
+NET "IN_ResultEnable" LOC = P11;
+
+NET "OUT_ResultFlag[0]" LOC = P14;
+NET "OUT_ResultFlag[1]" LOC = P16;
+NET "IN_ResultFlag[0]" LOC = P21;
+NET "IN_ResultFlag[1]" LOC = P23;
+
+# Buzzer
+NET "Buzzer" LOC = P83;
+
+
+
